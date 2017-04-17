@@ -1,5 +1,7 @@
-<html lang="en"><head>
-    <title>Code coverage report for node-npmtest-imagemin-pngquant/imagemin-pngquant/index.js</title>
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for node-npmtest-imagemin-pngquant/node_modules/imagemin-pngquant/index.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -192,7 +194,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-imagemin-pngquant">npmtest-imagemin-pngquant (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-imagemin-pngquant/imagemin-pngquant/index.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-imagemin-pngquant/node_modules/imagemin-pngquant/index.js</span></h1>
     <h2>
         
         Statements: <span class="metric">14.29% <small>(4 / 28)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -208,11 +210,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> » <a href="index.html">node-npmtest-imagemin-pngquant/imagemin-pngquant/</a> » index.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-imagemin-pngquant/node_modules/imagemin-pngquant/</a> &#187; index.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tbody><tr><td class="line-count">1
+<tr><td class="line-count">1
 2
 3
 4
@@ -335,66 +337,65 @@ const execBuffer = require('exec-buffer');
 const isPng = require('is-png');
 const pngquant = require('pngquant-bin');
 &nbsp;
-module.exports = opts =&gt; <span class="cstat-no" title="statement not covered">buf =&gt; {</span>
-<span class="cstat-no" title="statement not covered">	opts = Object.assign({}, opts);</span>
+module.exports = opts =&gt; <span class="cstat-no" title="statement not covered" >buf =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >	opts = Object.assign({}, opts);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	if (!Buffer.isBuffer(buf)) {</span>
-<span class="cstat-no" title="statement not covered">		return Promise.reject(new TypeError('Expected a buffer'));</span>
+<span class="cstat-no" title="statement not covered" >	if (!Buffer.isBuffer(buf)) {</span>
+<span class="cstat-no" title="statement not covered" >		return Promise.reject(new TypeError('Expected a buffer'));</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered">	if (!isPng(buf)) {</span>
-<span class="cstat-no" title="statement not covered">		return Promise.resolve(buf);</span>
+<span class="cstat-no" title="statement not covered" >	if (!isPng(buf)) {</span>
+<span class="cstat-no" title="statement not covered" >		return Promise.resolve(buf);</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered">	const args = [</span>
+<span class="cstat-no" title="statement not covered" >	const args = [</span>
 		'--output', execBuffer.output,
 		execBuffer.input
 	];
 &nbsp;
-<span class="cstat-no" title="statement not covered">	if (opts.floyd &amp;&amp; typeof opts.floyd === 'number') {</span>
-<span class="cstat-no" title="statement not covered">		args.push(`--floyd=${opts.floyd}`);</span>
+<span class="cstat-no" title="statement not covered" >	if (opts.floyd &amp;&amp; typeof opts.floyd === 'number') {</span>
+<span class="cstat-no" title="statement not covered" >		args.push(`--floyd=${opts.floyd}`);</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered">	if (opts.floyd &amp;&amp; typeof opts.floyd === 'boolean') {</span>
-<span class="cstat-no" title="statement not covered">		args.push('--floyd');</span>
+<span class="cstat-no" title="statement not covered" >	if (opts.floyd &amp;&amp; typeof opts.floyd === 'boolean') {</span>
+<span class="cstat-no" title="statement not covered" >		args.push('--floyd');</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered">	if (opts.nofs) {</span>
-<span class="cstat-no" title="statement not covered">		args.push('--nofs');</span>
+<span class="cstat-no" title="statement not covered" >	if (opts.nofs) {</span>
+<span class="cstat-no" title="statement not covered" >		args.push('--nofs');</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered">	if (opts.posterize) {</span>
-<span class="cstat-no" title="statement not covered">		args.push('--posterize', opts.posterize);</span>
+<span class="cstat-no" title="statement not covered" >	if (opts.posterize) {</span>
+<span class="cstat-no" title="statement not covered" >		args.push('--posterize', opts.posterize);</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered">	if (opts.quality) {</span>
-<span class="cstat-no" title="statement not covered">		args.push('--quality', opts.quality);</span>
+<span class="cstat-no" title="statement not covered" >	if (opts.quality) {</span>
+<span class="cstat-no" title="statement not covered" >		args.push('--quality', opts.quality);</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered">	if (opts.speed) {</span>
-<span class="cstat-no" title="statement not covered">		args.push('--speed', opts.speed);</span>
+<span class="cstat-no" title="statement not covered" >	if (opts.speed) {</span>
+<span class="cstat-no" title="statement not covered" >		args.push('--speed', opts.speed);</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered">	if (opts.verbose) {</span>
-<span class="cstat-no" title="statement not covered">		args.push('--verbose');</span>
+<span class="cstat-no" title="statement not covered" >	if (opts.verbose) {</span>
+<span class="cstat-no" title="statement not covered" >		args.push('--verbose');</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered">	return execBuffer({</span>
+<span class="cstat-no" title="statement not covered" >	return execBuffer({</span>
 		input: buf,
 		bin: pngquant,
 		args
 	}).catch(err =&gt; {
-<span class="cstat-no" title="statement not covered">		err.message = err.stderr || err.message;</span>
-<span class="cstat-no" title="statement not covered">		throw err;</span>
+<span class="cstat-no" title="statement not covered" >		err.message = err.stderr || err.message;</span>
+<span class="cstat-no" title="statement not covered" >		throw err;</span>
 	});
 };
 &nbsp;
 &nbsp;</pre></td></tr>
-</tbody></table></pre>
+</table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 11:14:14 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 16:17:49 GMT+0000 (UTC)</div>
 </div>
-
-
-</body></html>
+</body>
+</html>
