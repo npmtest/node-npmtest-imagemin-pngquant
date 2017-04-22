@@ -261,7 +261,7 @@
 <tspan x="10" y="4138">    │ │     │ └─┬ currently-unhandled@0.4.1 </tspan>
 <tspan x="10" y="4154">    │ │     │   └── array-find-index@1.0.2 </tspan>
 <tspan x="10" y="4170">    │ │     ├── map-obj@1.0.1 </tspan>
-<tspan x="10" y="4186">    │ │     ├─┬ normalize-package-data@2.3.6 </tspan>
+<tspan x="10" y="4186">    │ │     ├─┬ normalize-package-data@2.3.8 </tspan>
 <tspan x="10" y="4202">    │ │     │ ├── hosted-git-info@2.4.2 </tspan>
 <tspan x="10" y="4218">    │ │     │ ├─┬ is-builtin-module@1.0.0 </tspan>
 <tspan x="10" y="4234">    │ │     │ │ └── builtin-modules@1.1.1 </tspan>
