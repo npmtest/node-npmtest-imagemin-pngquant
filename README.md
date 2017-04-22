@@ -1,4 +1,7 @@
-# test coverage for  [imagemin-pngquant (v5.0.0)](https://github.com/imagemin/imagemin-pngquant#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-imagemin-pngquant.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-imagemin-pngquant) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-imagemin-pngquant.svg)](https://travis-ci.org/npmtest/node-npmtest-imagemin-pngquant)
+# npmtest-imagemin-pngquant
+
+#### basic test coverage for  [imagemin-pngquant (v5.0.0)](https://github.com/imagemin/imagemin-pngquant#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-imagemin-pngquant.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-imagemin-pngquant) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-imagemin-pngquant.svg)](https://travis-ci.org/npmtest/node-npmtest-imagemin-pngquant)
+
 #### pngquant imagemin plugin
 
 [![NPM](https://nodei.co/npm/imagemin-pngquant.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/imagemin-pngquant)
@@ -97,7 +100,8 @@
     "version": "5.0.0",
     "xo": {
         "esnext": true
-    }
+    },
+    "bin": {}
 }
 ```
 
